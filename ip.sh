@@ -3,25 +3,32 @@
 #I am Burmese and I love my people
 #I want independence and democracy
 # Developer By Mg Ad A M
-
 clear
 
-  ping -c 1 google.com > /dev/null
+  ping -c 1 google.com > /dev/null 2>1 
   if [[ "$?" != 0 ]]
   then
     echo -e  "\e[1;31m                  Checking For Internet: FAILED
     This Script Needs An Active Internet Connection \e[0m"
-    echo " GitClin Will Now Exit"
+    
     echo && sleep 2
     exit
   else
     echo -e "\e[1;32m Checking For Internet: CONNECTED\e[0m"
     sleep 2
   fi
+clear 
+echo -e "\e[5;36m install  packages  Please wait"
 
-clear
+pkg install ruby -y && gem install lolcat 
 
+pkg install figlet -y
 
+sleep 3 
+
+echo -e "\e[1;36m All packages have been installed"
+
+clear 
 echo -e "\e[5;30m 
 ⠄⣾⣿⡇⢸⣿⣿⣿⠄⠈⣿⣿⣿⣿⠈⣿⡇⢹⣿⣿⣿⡇⡇⢸⣿⣿⡇⣿⣿⣿
 ⢠⣿⣿⡇⢸⣿⣿⣿⡇⠄⢹⣿⣿⣿⡀⣿⣧⢸⣿⣿⣿⠁⡇⢸⣿⣿⠁⣿⣿⣿
@@ -38,10 +45,10 @@ echo -e "\e[5;30m
 ⣿⣿⣷⡀⠄⠈⠛⢿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⠿⠋⠠⠂⢀⣾⣿
 ⣿⣿⣿⣧⠄⠄⢵⢠⣈⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢋⡁⢰⠏⠄⠄⣼⣿⣿
 ⢻⣿⣿⣿⡄⢢⠨⠄⣯⠄⠄⣌⣉⠛⠻⠟⠛⢋⣉⣤⠄⢸⡇⣨⣤⠄⢸⣿⣿⣿
-\e[0m" | lolcat
+\e[0m" | lolcat -a -d 5
 
 echo ""
-figlet Ip info | lolcat
+figlet Ip info | lolcat 
 
 
 echo ""
@@ -52,7 +59,7 @@ echo -e "\e[1;31m   ________________________"
 
 echo ""
 
-echo -e  " \e[1;32m        code By Ad A M  "
+echo -e  " \e[1;32m        code By Ad A M  " | lolcat -a -d 5
 
 echo "" 
 
