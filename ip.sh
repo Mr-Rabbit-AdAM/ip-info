@@ -81,7 +81,7 @@ lat=$(echo $ad | grep -oP '(?<="lat":)[^,]*')
 lon=$(echo $ad | grep -oP '(?<="lon":)[^,]*')
 zip=$(echo $ad | grep -oP '(?<="zip":")[^"]*')
 timezone=$(echo $ad | grep -oP '(?<="timezone":")[^"]*')
-
+echo ""
 sleep 4
 echo "Ip Address >> $ghost"
 sleep 2 
